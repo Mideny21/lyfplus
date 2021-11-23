@@ -112,7 +112,7 @@ class _LoginFormState extends State<LoginForm> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        'Tweety',
+                        'Lyf Plus',
                         style: TextStyle(
                           color: Theme.of(context).scaffoldBackgroundColor,
                           fontSize: 40.0,
