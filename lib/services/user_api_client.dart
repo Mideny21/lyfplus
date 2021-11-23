@@ -2,13 +2,11 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:http/http.dart';
+import 'package:lyfplus_mobile/constants/api_constants.dart';
 import 'package:lyfplus_mobile/repositories/models/auth.dart';
 import 'package:path/path.dart';
 import 'package:http/http.dart' as http;
-import 'package:tweety_mobile/constants/api_constants.dart';
-import 'package:tweety_mobile/models/auth.dart';
-import 'package:tweety_mobile/models/user.dart';
-import 'package:tweety_mobile/preferences/preferences.dart';
+
 import 'package:http_parser/http_parser.dart';
 
 class UserApiClient {

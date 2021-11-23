@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'package:lyfplus_mobile/repositories/user_repository.dart';
 import 'package:lyfplus_mobile/screens/auth/login_screen.dart';
 
 void main() {
@@ -6,7 +8,12 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  final UserRepository userRepository;
+
+  const MyApp({
+    Key? key,
+    required this.userRepository,
+  }) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -16,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoginScreen(),
+      home: LoginScreen(userRepository: userRepository),
     );
   }
 }

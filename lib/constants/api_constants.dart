@@ -1,8 +1,5 @@
 import 'dart:io';
 
-import 'package:flutter_pusher_client/flutter_pusher.dart';
-import 'package:laravel_echo/laravel_echo.dart';
-
 class ApiConstants {
   static const BASE_URL = 'http://10.0.3.2:8000/api/';
 }
